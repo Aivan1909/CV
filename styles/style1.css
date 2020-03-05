@@ -1,0 +1,289 @@
+/****************************** 
+        MOBILE FIRST 
+******************************/
+
+/* UNIVERSAL */
+@font-face{
+    font-family: "ChakraPetch";
+    src: url("../fonts/Chakra_Petch/ChakraPetch-Light.ttf");
+}
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf");
+}
+@font-face{
+    font-family: "RobotoCondensed";
+    src: url("../fonts/Roboto_Condensed/RobotoCondensed-Light.ttf");
+}
+:root{
+    --color-azul: #0f4c81;
+    --color-blanco: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: "RobotoCondensed";
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 2rem;
+}
+p, span, a, b, i, li, div{
+    font-size: 1.7rem;
+}
+body{
+    display: grid;
+    grid-template-areas: "encabezado"
+                        "sobre_mi"
+                        "contacto"
+                        "idiomas"
+                        "habilidades"
+                        "formacion_academica"
+                        "experiencia_laboral"
+                        "talleres"
+                        "formacion_adicional";
+}
+
+/* CAJAS */
+.box{
+    margin: 0 30px;
+    padding: 10px 0;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+.box .sector{
+    margin: 5px 0;
+}
+.box .cabeza-box{
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.box ul{
+    list-style: none;
+}
+.cabeza-box i{
+    background-color: var(--color-azul);
+    font-size: 2.5rem;
+    color:var(--color-blanco);
+    border-radius: 50%;
+    padding: 7px;
+    margin: 0 5px;
+}
+.cabeza-box h3{
+    margin: 0 5px;
+    color: var(--color-azul);
+}
+.linea-vertical{
+    content: "";
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-left: 5px;
+    background-color: var(--color-azul);
+}
+
+/* ENCABEZADO */
+.encabezado{
+    width: inherit;
+    grid-area: encabezado;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+}
+.encabezado .nombre,
+.encabezado span{
+    width: 80%;
+    text-align: left;
+}
+.encabezado .nombre{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.encabezado img{
+    width: 70%;
+    border-radius: 50%;
+    margin: 10px;
+}
+.sobre_mi{
+    grid-area: sobre_mi;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 25px  18px 10% 18px!important;
+    border-radius: 0 0 50% 50%;
+}
+.sobre_mi i,
+.sobre_mi .linea-vertical{
+    background-color: var(--color-blanco)!important;
+    color:var(--color-azul)!important;
+}
+.sobre_mi h3{
+    color: var(--color-blanco)!important;
+}
+
+/* CONTACTO */
+.contacto{
+    grid-area: contacto;
+}
+.contacto .sector span,
+.contacto .sector a{
+    width: 48%;
+    max-width: 48%;
+    display: inline-block!important;
+}
+/* CODIGO QR */
+.box.codigoQR{
+    grid-area: codigoQR;
+    display: none;
+    flex-flow: column nowrap;
+    width: 50vw;
+    padding: 10px;
+    margin: 15px auto;
+    background-color: var(--color-azul);
+}
+.codigoQR img{
+    width: 50vw;
+}
+.codigoQR,
+.codigoQR img{
+    border-radius: 10%;
+}
+.codigoQR .cabeza-box{
+    color: var(--color-blanco);
+    margin-top: 10px;
+    margin-bottom: 0!important;
+}
+.codigoQR i{
+    color: var(--color-azul)!important;
+    background-color: var(--color-blanco)!important;
+}
+
+/* IDIOMAS */
+.box.idiomas{
+    grid-area: idiomas;
+}
+
+/* HABILIDADES */
+.box.habilidades{
+    grid-area: habilidades;
+}
+
+/* FORMACION ACADEMICA */
+.box.formacion-academica{
+    grid-area: formacion_academica;
+}
+.formacion-academica p:nth-child(1){
+    font-weight: bolder;
+}
+.formacion-academica p:nth-child(1),
+.formacion-academica p:nth-child(2){
+    color: var(--color-azul);
+}
+.separador{
+    margin-top: 8px;
+    content: "";
+    width: 30%;
+    border:dashed var(--color-azul) 1.2px;
+}
+
+/* EXPERIENCIA LABORAL */
+.box.experiencia-laboral{
+    grid-area: experiencia_laboral;
+}
+.experiencia-laboral p:nth-child(1),
+.experiencia-laboral p:nth-child(2),
+.talleres p:nth-child(1){
+    font-weight: bolder;
+    color: var(--color-azul);
+}
+.experiencia-laboral i,
+.talleres i{
+    margin: 0 5px;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+.experiencia-laboral p:last-of-type{
+    text-align: justify;
+}
+
+/* TALLERES Y CHARLAS */
+.box.talleres{
+    grid-area: talleres;
+}
+
+/* FORMACION ADICIONAL */
+.box.formacion-adicional{
+    grid-area: formacion_adicional;
+}
+.formacion-adicional .sector p{
+    /* width: 50%;
+    max-width: 50%;
+    display: inline-block!important; */
+}
+.formacion-adicional .sector{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.formacion-adicional .sector p:first-of-type{
+    width: 37%;
+    max-width: 37%;
+}
+.formacion-adicional .sector p:last-of-type{
+    width: 60%;
+    max-width: 60%;
+}
+
+/* RESPONSIVO */
+@media only screen and (min-width:750px){
+    body{
+        margin: 0 10px;
+        grid-template-columns: 35% 40% 20%;
+        grid-template-areas: "encabezado contacto contacto"
+                            "sobre_mi formacion_academica formacion_academica"
+                            "idiomas formacion_academica formacion_academica"
+                            "habilidades experiencia_laboral experiencia_laboral"
+                            "talleres formacion_adicional formacion_adicional";
+    }
+    .encabezado img{
+        width: 100px;
+    }
+    .box.codigoQR{
+        width: 120px;
+        height: 200px;
+    }
+    .codigoQR img{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:1225px){
+    body{
+        margin: 0 200px;
+    }
+    .encabezado img{
+        width: 200px;
+    }
+}
+@media only screen and (min-width:1000px){
+    body{
+        margin: 0 100px;
+    }
+    .encabezado img{
+        width: 150px;
+    }
+}

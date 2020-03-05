@@ -22,14 +22,46 @@ h3{
     font-size: 1.5rem;
     text-transform: uppercase;
 }
-p, li, b, section, div, a{
+p, li, b, section, div, a, span{
     font-size: 1.4rem;
+}
+.link{
+    text-decoration: underline;
+    cursor: pointer;
 }
 body{
     width: 100%;
     display: grid;
-    grid-template-areas: "aside encabezado encabezado"
-                        "aside main main";
+    grid-template-areas: "aside encabezado encabezado encabezado encabezado"
+                        "aside main main main main";
+}
+
+/* MODAL DE CERTIFICADOS */
+#modal{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+}
+#modal>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px var(--color-iconos);
+}
+#modal>span{
+    position: absolute;
+    color: var(--color-blanco);
+    font-size: 3rem;
+    right: 0;
+    transform: translate(-150%, 30%);
+    cursor: pointer;
+}
+#modal>span:hover{
+    color: var(--color-iconos);
 }
 
 /************
@@ -37,7 +69,6 @@ MENU LATERAL
 *************/
 .info-aside{
     grid-area: aside;
-    flex: 0 0 30rem;
     display: flex;
     flex-flow: column nowrap;
     background: var(--color-fondo);
@@ -168,12 +199,17 @@ main{
     text-align: right;
 }
 main .estado, div.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
     left: calc(-2.5rem - 1.5rem);
     color: #fff;
-    padding: 2.8rem 2rem 2.8rem 5rem;
     margin: 1.5rem 0;
     background-color: #c70d3a;
+}
+.estado h1{
+    margin: 30px auto;
 }
 .box-formaciones{
     position: relative;
@@ -258,8 +294,11 @@ main .estado, div.info {
     h3{
         font-size: 1.2rem;
     }
-    p, li, b, section, div, a{
+    p, li, b, section, div, a, span{
         font-size: 1rem;
+    }
+    .link{
+        text-decoration: none;
     }
     .info-aside{
         flex: 0 0 25rem;
@@ -289,9 +328,6 @@ main .estado, div.info {
     .fila>i{
         flex: 0 0 5%;
     }
-    main .estado, div.info {
-        padding: 1rem 1rem 1rem 5rem;
-    }
     .box-info .info{
         max-width: 100%;
     }
@@ -305,7 +341,7 @@ main .estado, div.info {
         font-size: 0.8em;
     }
 }
-@media only screen and (max-width:980px) {
+@media only screen and (max-width:768px) {
     body{
         width: 100%!important;
         grid-template-areas: "encabezado"
@@ -333,7 +369,6 @@ main .estado, div.info {
         max-width: 90%;
     }
     main .estado, div.info{
-        width: 100%;
         font-size: 2rem;
     }
     .encabezado .nombre h2{
