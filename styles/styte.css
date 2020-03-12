@@ -1,0 +1,391 @@
+:root{
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --color-fondo: #230338;
+    --color-iconos: #ed5107;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Arimo', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+p, li, b, section, div, a, span{
+    font-size: 1.4rem;
+}
+.link{
+    text-decoration: underline;
+    cursor: pointer;
+}
+body{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "aside encabezado encabezado encabezado encabezado"
+                        "aside main main main main";
+}
+
+/* MODAL DE CERTIFICADOS */
+#modal{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+}
+#modal>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px var(--color-iconos);
+}
+#modal>span{
+    position: absolute;
+    color: var(--color-blanco);
+    font-size: 3rem;
+    right: 0;
+    transform: translate(-150%, 30%);
+    cursor: pointer;
+}
+#modal>span:hover{
+    color: var(--color-iconos);
+}
+
+/************
+MENU LATERAL 
+*************/
+.info-aside{
+    grid-area: aside;
+    display: flex;
+    flex-flow: column nowrap;
+    background: var(--color-fondo);
+    color: #fff;
+    font-size: 1.8rem;
+}
+.info-aside .info{
+    width: 90%;
+}
+.info-aside .box{
+    width: 80%;
+    margin: 3rem 1rem;
+    align-self: center!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.codigoQR{
+    display: none;
+}
+.codigoQR img{
+    display: block!important;
+    margin: 50px auto 0 auto!important;
+}
+.box i{
+    flex: 0 0 20%;
+    color: var(--color-iconos);
+    width: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    background-color: var(--color-fondo);
+    border-radius: 1.8rem;
+    box-shadow: #fff 0.2rem 0.2rem 0.3rem 0.1rem;
+    margin-right: 2rem;
+    padding: 0.8rem;
+}
+.box a{
+    flex: 1 1 auto;
+    color: #fff;
+    margin: 0.7rem 0;
+}
+.box div, .box ul{
+    padding: 1rem 0;
+}
+.box.fila{
+    align-self: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+.fila h3{
+    flex: 0 0 100%;
+}
+.fila>i{
+    align-self: flex-start;
+    flex: 0 0 10%;
+    width: 3rem;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+.fila a{
+    flex: 1 0 70%;
+    align-self: center;
+}
+.hobbies{
+    flex: auto;
+}
+.box li{
+    margin-left: 2rem;
+}
+.info-aside img{
+    width: 40%;
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+/* MENU DESPLEGABLE DEL ASIDE */
+
+.hamburguesa,
+.hamburguesa input{
+    display: none;
+}
+/**********
+ENCABEZADO 
+**********/
+.encabezado{
+    grid-area: encabezado;
+    padding: 1rem 0 6.5rem 0;
+    width: 95%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: 1rem; 
+}
+.encabezado>.nombre-aptitudes{
+    display: flex;
+    justify-content: space-between;
+}
+.encabezado .nombre h2{
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+.nombre>h2:first-of-type{
+    color: #c70d3a;
+}
+.nombre>h2:last-of-type{
+    color: var(--color-iconos);
+}
+.nombre>h3{
+    color: var(--color-fondo);
+}
+
+/********
+CUERPO
+*******/
+main{
+    grid-area: main;
+    flex: 1 1 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.aptitudes h3{
+    text-transform: capitalize;
+    color: var(--color-iconos);
+    text-align: right;
+}
+main .estado, div.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: calc(-2.5rem - 1.5rem);
+    color: #fff;
+    margin: 1.5rem 0;
+    background-color: #c70d3a;
+}
+.estado h1{
+    margin: 30px auto;
+}
+.box-formaciones{
+    position: relative;
+    width: 100%;
+}
+.borde-punteado{
+    height: 100%;
+    position: absolute;
+    left: -1.5rem;
+    z-index: 1;
+    border-left: var(--color-blanco) 1rem dotted;
+}
+.box-info .info{
+    max-width: 50%;
+    background-color: var(--color-iconos);
+    display: flex;
+    padding: 1rem 5rem;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.info i{
+    font-size: 2em;
+}
+.box-info:last-of-type{
+    page-break-before: always;
+}
+
+.box-info .formacion-academico, 
+.box-info .contenido-academico,
+.box-info .contenido-laboral{
+    display: flex;
+    flex-flow: wrap row;
+    width: 90%;
+    margin: 3rem 0;
+}
+.contenido-laboral b,
+.contenido-academico b{
+    font-size: 1.1em;
+    color: #02383c;
+    margin-bottom: 0.6rem;
+}
+.contenido-laboral i,
+.contenido-academico i{
+    padding: 0 1.5rem;
+}
+.left{
+    font-weight: 900;
+    font-style: italic;
+}
+.contenido-academico .left{
+    flex: 0 0 30%;
+}
+.contenido-academico .rigth{
+    flex: 1 0 70%;
+}
+.formacion-academico .left{
+    flex: 0 0 20%;
+}
+.formacion-academico .rigth{
+    flex: 1 0 80%;
+}
+
+.contenido-laboral p,
+.contenido-academico p{
+    flex: 100%;
+}
+
+/* IMPRESION */
+@media only print{
+    @page{
+        size: letter;
+        margin-top: 2cm;
+        margin-bottom: 2cm;
+    }
+    h1{
+        font-size: 1.4em;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    p, li, b, section, div, a, span{
+        font-size: 1rem;
+    }
+    .link{
+        text-decoration: none;
+    }
+    .info-aside{
+        flex: 0 0 25rem;
+    }
+    .info-aside .box{
+        width: 78%;
+        margin: 2rem 1rem;
+    }
+    .codigoQR{
+        display: block;
+    }
+    .box div{
+        padding: 0rem 0;
+    }
+    .box a{
+        text-decoration: none;
+    }
+    .box i{
+        flex: 0 0 10%;
+        width: 1rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+        box-shadow: none;
+        margin-right: 1rem;
+        padding: 0.5rem;
+    }
+    .fila>i{
+        flex: 0 0 5%;
+    }
+    .box-info .info{
+        max-width: 100%;
+    }
+    .box-info .formacion-academico, 
+    .box-info .contenido-academico,
+    .box-info .contenido-laboral{
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+    .left{
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width:768px) {
+    body{
+        width: 100%!important;
+        grid-template-areas: "encabezado"
+                            "aside"
+                            "main";
+    }
+    .encabezado{
+        padding: 1rem 0 2.5rem 0!important;
+    }
+    .fa-bars{
+        font-size: 2rem;
+        position: fixed;
+        border-radius: 50%;
+        margin-right: 15px;
+        padding: 10px;
+        box-shadow: 0px 0px 3px 2px var(--color-iconos);
+        color: var(--color-iconos);
+        background-color: var(--color-fondo);
+        right: 0;
+    }
+    .info-aside>section{
+        align-self: center!important;
+    }
+    .box-info .info{
+        max-width: 90%;
+    }
+    main .estado, div.info{
+        font-size: 2rem;
+    }
+    .encabezado .nombre h2{
+        font-size: 3rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .info i{
+        width: 1.5rem;
+        font-size: 1.4rem;
+        margin-right: 0.2rem;
+    }
+    p, li, b, section, div, a{
+        font-size: 1.5rem;
+    }
+}

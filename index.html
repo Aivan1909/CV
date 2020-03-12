@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles/style1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fafa46ece0.js"></script>
+</head>
+
+<body>
+    <div class="box encabezado">
+        <img src="imgs/perfil.jpg" alt="Foto Perfil" />
+        <div class="nombre">
+            <h2>Ivan Aramis</h2>
+            <h2>Terrazas Paz</h2>
+        </div>
+        <span class="prof_actual">Estudiante de Informática - UMSA</span>
+    </div>
+    <div class="box sobre_mi">
+        <div class="valor">
+            <h4>Responsabilidad</h4>
+        </div>
+        <div class="valor">
+            <h4>Transparencia</h4>
+        </div>
+        <div class="valor">
+            <h4>Organización</h4>
+        </div>
+        <div class="valor">
+            <h4>Creatividad</h4>
+        </div>
+        <div class="valor">
+            <h4>Respeto</h4>
+        </div>
+        <div class="valor">
+            <h4>Justicia</h4>
+        </div>
+    </div>
+    <section class="box contacto">
+        <div class="cabeza-box">
+            <i class="fas fa-envelope"></i>
+            <h3>Contacto</h3>
+            <div class="linea-vertical"></div>
+        </div>
+        <div class="sector">
+            <span>Correo:</span>
+            <a class="click" href="mailto:ivatepaz94@gmail.com?subject=Hola%20Ivan%20Terrazas,%20estamos%20interesados"
+                target="_blank">ivatepaz94@gmail.com</a>
+        </div>
+        <div class="sector">
+            <span>Celular:</span>
+            <a class="click" href="https://wa.me/59169788901?text=Hola%20Ivan%20Terrazas,%20estamos%20interesados"
+                target="_blank">+591-69788901</a>
+        </div>
+        <div class="sector">
+            <span>Domicilio:</span>
+            <span>C. Independencia #364 Z. Achachicala</span>
+        </div>
+        <div class="sector">
+            <span>Ciudad:</span>
+            <span>La Paz - Bolivia</span>
+        </div>
+        <div class="sector">
+            <span>Fecha de Nacimiento:</span>
+            <span>19/09/1994</span>
+        </div>
+    </section>
+    <div class="box codigoQR">
+        <img src="imgs/micv.png" alt="Mi QR de CV" />
+        <div class="cabeza-box">
+            <i class="fas fa-address-card"></i>
+            <p>Mi CV Virtual</p>
+        </div>
+    </div>
+    <section class="box idiomas">
+        <div class="cabeza-box">
+            <i class="fas fa-globe-americas"></i>
+            <h3>Idiomas</h3>
+            <div class="linea-vertical"></div>
+        </div>
+        <span>Español - Idioma Natal</span>
+        <div class="separador"></div><br>
+        <span>Ingles - Nivel Intermedio</span>
+    </section>
+    <section class="box habilidades">
+        <div class="cabeza-box">
+            <i class="fas fa-user"></i>
+            <h3>Informática</h3>
+            <div class="linea-vertical"></div>
+        </div>
+        <ul>
+            <li>Microsoft Office</li>
+            <li>MySql</li>
+            <li>Oracle</li>
+            <li>SqlServer</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Arduino</li>
+            <li>Web Design (Frontend)</li>
+            <li>PHP</li>
+            <li>CodeIgniter</li>
+        </ul>
+    </section>
+    <div class="box formacion-academica">
+        <div class="cabeza-box">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Formacion Academica</h3>
+            <div class="linea-vertical"></div>
+        </div>
+        
+        <div class="sector formacion-academica foac">
+            <p>Actual</p>
+            <p class="click" onclick="mostrar_modal('foac', '3')">
+                10mo Semestre Carrera de Informatica
+            </p>
+            <p>La Paz - Bolivia</p>
+            <p>Universidad Mayor de San Andrés</p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector formacion-academica foac">
+            <p>2013</p>
+            <p class="click" onclick="mostrar_modal('foac', '2')">Diploma of Proficiency in English</p>
+            <p>La Paz - Bolivia</p>
+            <p>Centro Boliviano Americano</p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector formacion-academica foac">
+            <p>2011</p>
+            <p class="click" onclick="mostrar_modal('foac', '1')">Diploma de Bachiller</p>
+            <p>La Paz - Bolivia</p>
+            <p>Colegio Boliviano Alemán “Ave María”</p>
+        </div>
+    </div>
+    <div class="box experiencia-laboral">
+        <div class="cabeza-box">
+            <i class="fab fa-black-tie"></i>
+            <h3>Experiencia Laboral</h3>
+            <div class="linea-vertical"></div>
+        </div>
+        <!-- AÑADIR DESDE AQUI UN NUEVO CVEXPE -->
+        <div class="sector experiencia-laboral exla">
+            <p>12/2019 - 02/2020 <i class="fas fa-dot-circle"></i> FCPN - UMSA</p>
+            <p class="click" onclick="mostrar_modal('exla', '6')">Apoyo Administrativo Verano 2019</p>
+            <p class="tareas-realizadas">
+                Realizar y Administrar Inscripciones del Curso de Temporada Verano
+                2019 y los trámites correspondientes al curso.
+            </p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector experiencia-laboral exla">
+            <p>06/2019 - 08/2019 <i class="fas fa-dot-circle"></i> FCPN - UMSA</p>
+            <p class="click" onclick="mostrar_modal('exla', '5')">Apoyo Administrativo Invierno 2019</p>
+            <p class="tareas-realizadas">
+                Realizar y Administrar Inscripciones del Curso de Temporada Invierno
+                2019 y los trámites correspondientes al curso.
+            </p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector experiencia-laboral exla">
+            <p>02/2019 - 02/2019 <i class="fas fa-dot-circle"></i> FCPN - UMSA</p>
+            <p class="click" onclick="mostrar_modal('exla', '4')">Tribunal Paritario Docente - Estudiantil</p>
+            <p class="tareas-realizadas">
+                Evalucación de los postulantes a la Convocatoria de Auxiliares de Docencia en la materia de MAT-156.
+            </p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector experiencia-laboral exla">
+            <p>
+                01/2019 - 03/2019 <i class="fas fa-dot-circle"></i> Fundación “Aydha”
+            </p>
+            <p class="click" onclick="mostrar_modal('exla', '3')">Asesor y tutor</p>
+            <p class="tareas-realizadas">
+                Enseñar electrónica e informatica, para que posteriormente sean
+                capaces de poder resolver problemas basicos de la electronica y
+                conocimiento de estructuras informaticas.
+            </p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector experiencia-laboral exla">
+            <p>
+                07/2018 - 08/2018 <i class="fas fa-dot-circle"></i> Fundación “Aydha”
+            </p>
+            <p class="click" onclick="mostrar_modal('exla', '2')">Asesor y tutor</p>
+            <p class="tareas-realizadas">
+                Enseñar electrónica básica, el armado y codificación de la plaqueta
+                Arduino a publico en general.
+            </p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector experiencia-laboral exla">
+            <p>
+                04/2017 - 09/2017 <i class="fas fa-dot-circle"></i> Instituto de
+                Estadística Teórica y Aplicada - UMSA
+            </p>
+            <p class="click" onclick="mostrar_modal('exla', '1')">Digitalizador de Datos</p>
+            <p class="tareas-realizadas">
+                Digitalizar información almacenada de pacientes, para la
+                implementacion de un nuevo sistema, a su vez se realizo un estudio
+                estadistico del tipo de pacientes y tipo de problemas que tenian.
+            </p>
+        </div>
+    </div>
+    <div class="box talleres">
+        <div class="cabeza-box">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h3>Talleres Charlas</h3>
+            <div class="linea-vertical"></div>
+        </div>
+        <!-- AÑADIR DESDE AQUI UN NUEVO CVTALL -->
+        <div class="sector talleres tach">
+            <p class="click" onclick="mostrar_modal('tach', '5')">03/2020 - Actual <i class="fas fa-dot-circle"></i> "FullStack" -
+                UMSA <i class="fas fa-dot-circle"></i> Desarrollo Web (Basico)
+                <i class="fas fa-dot-circle"></i> Tutor</p>
+            <p class="contenido">
+                Enseñanza de HTML, CSS, Javascript para la creacion de paginas web
+                (Frontend). Adicionalmente Git, Bootstrap y Vue.js.
+            </p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector talleres tach">
+            <p class="click" onclick="mostrar_modal('tach', '4')">03/2020 - Actual <i class="fas fa-dot-circle"></i> "FullStack" - UMSA <i class="fas fa-dot-circle"></i> Desarrollo Web (Intermedio)
+                <i class="fas fa-dot-circle"></i> Tutor</p>
+            <p class="contenido">
+                Enseñanza de php y MySQL para el desarrollo backend de una pagina web.
+            </p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector talleres tach">
+            <p class="click" onclick="mostrar_modal('tach', '3')">08/2019 - 12/2019 <i class="fas fa-dot-circle"></i> "WeDevs
+                Community" - UMSA <i class="fas fa-dot-circle"></i> CodeIgniter
+                <i class="fas fa-dot-circle"></i> Tutor</p>
+            <p class="contenido">
+                Enseñanza del Framework CodeIgniter en un nivel Básico hasta realizar
+                un CRUD
+            </p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector talleres tach">
+            <p class="click" onclick="mostrar_modal('tach', '2')">08/2019 - 12/2019 <i class="fas fa-dot-circle"></i> "FullStack" -
+                UMSA <i class="fas fa-dot-circle"></i> Desarrollo Web (Basico)
+                <i class="fas fa-dot-circle"></i> Tutor</p>
+            <p class="contenido">
+                Enseñanza de HTML, CSS, Javascript para la creacion de paginas web
+                (Frontend)
+            </p>
+            <div class="separador"></div>
+        </div>
+        <div class="sector talleres tach">
+            <p class="click" onclick="mostrar_modal('tach', '1')">03/2019 - 06/2019 <i class="fas fa-dot-circle"></i> "FullStack" -
+                UMSA <i class="fas fa-dot-circle"></i> Desarrollo Web (Basico)
+                <i class="fas fa-dot-circle"></i> Tutor</p>
+            <p class="contenido">
+                Enseñanza de HTML, CSS, Javascript para la creacion de paginas web
+                (Frontend)
+            </p>
+        </div>
+    </div>
+    <div class="box formacion-adicional">
+        <div class="cabeza-box">
+            <i class="fas fa-chalkboard"></i>
+            <h3>Formaciones Adicionales y de Interes</h3>
+            <div class="linea-vertical"></div>
+        </div>
+        <!-- AÑADIR DESDE AQUI UN NUEVO CVFORMACION -->
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2019</p>
+                <p  class="click" onclick="mostrar_modal('foad', '10')">Arduino Day 2019 - Reconocimiento</p>
+            </div>
+            <div class="sector">
+                <p >La Paz - Bolivia</p>
+                <p>Fundación “AYDHA”</p>
+            </div>
+            <div class="separador"></div>
+        </div>
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2018</p>
+                <p  class="click" onclick="mostrar_modal('foad', '9')">
+                    Desarrollo de Aplicaciones Móviles Android (Kotlin) – 50 hrs
+                </p>
+            </div>
+            <div class="sector">
+                <p >La Paz - Bolivia</p>
+                <p>Universidad Mayor de “San Andrés”</p>
+            </div>
+            <div class="separador"></div>
+        </div>
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2018</p>
+                <p  class="click" onclick="mostrar_modal('foad', '8')">
+                    Desarrollo de páginas Web con Laravel – 50 hrs
+                </p>
+            </div>
+            <div class="sector">
+                <p >La Paz - Bolivia</p>
+                <p>Universidad Mayor de “San Andrés”</p>
+            </div>
+            <div class="separador"></div>
+        </div>
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2018</p>
+                <p  class="click" onclick="mostrar_modal('foad', '7')">Arduino Day 2018 - Reconocimiento</p>
+            </div>
+            <div class="sector">
+                <p >La Paz - Bolivia</p>
+                <p>
+                    Consejo Plurinacional de la Juventud
+                </p>
+            </div>
+            <div class="separador"></div>
+        </div>
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2017</p>
+                <p  class="click" onclick="mostrar_modal('foad', '6')">
+                    Desarrollo de Aplicaciones Android (Nivel Básico) – 50 hrs
+                </p>
+            </div>
+            <div class="sector">
+                <p >La Paz - Bolivia</p>
+                <p>Universidad Mayor de “San Andrés”</p>
+            </div>
+            <div class="separador"></div>
+        </div>
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2017</p>
+                <p  class="click" onclick="mostrar_modal('foad', '5')">
+                    XXIV Congreso Nacional de Ciencias de la Computación - 40 hrs
+                </p>
+            </div>
+            <div class="sector">
+                <p >Sucre - Bolivia</p>
+                <p>
+                    Universidad Mayor Real y Pontificia de “San Francisco Xavier de
+                    Chuquisaca”
+                </p>
+            </div>
+            <div class="separador"></div>
+        </div>
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2017</p>
+                <p  class="click" onclick="mostrar_modal('foad', '4')">Introducción a Git y GitHub – 5 hrs</p>
+            </div>
+            <div class="sector">
+                <p >La Paz - Bolivia</p>
+                <p>Universidad Mayor de “San Andrés”</p>
+            </div>
+            <div class="separador"></div>
+        </div>
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2016</p>
+                <p  class="click" onclick="mostrar_modal('foad', '3')">
+                    XXIII Congreso Nacional de Ciencias de la Computación - 90 hrs
+                </p>
+            </div>
+            <div class="sector">
+                <p >La Paz - Bolivia</p>
+                <p>Universidad Mayor de “San Andrés”</p>
+            </div>
+            <div class="separador"></div>
+        </div>
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2014</p>
+                <p  class="click" onclick="mostrar_modal('foad', '2')">
+                    XXI Congreso Nacional de Ciencias de la Computación - 60 hrs
+                </p>
+            </div>
+            <div class="sector">
+                <p >Tarija - Bolivia</p>
+                <p>
+                    Universidad Autónoma “Juan Misael Saracho”
+                </p>
+            </div>
+            <div class="separador"></div>
+        </div>
+        <div class="formacion-adicional foad">
+            <div class="sector">
+                <p>2013</p>
+                <p  class="click" onclick="mostrar_modal('foad', '1')">
+                    Como hablar en Público/Técnicas de Oratoria - 80 hrs
+                </p>
+            </div>
+            <div class="sector">
+                <p >La Paz - Bolivia</p>
+                <p>
+                    Centro Boliviano de Capacitación Integral
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="modal">
+        <span id="m_info"></span>
+        <span onclick="cerrar_modal()" id="m_cerrar">X</span>
+        <span onclick="atras()" id="m_ant"><</span>
+        <img id="foto" alt="Certificado en proceso" onerror="img_error();"/>
+        <span onclick="adelante()" id="m_sig">></span>
+    </div>
+    <div id="spin-carga"></div>
+</body>
+
+<script src="scripts/script.js"></script>
+
+</html>
