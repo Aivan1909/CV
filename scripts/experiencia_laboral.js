@@ -1,0 +1,44 @@
+var xpLaboral = [
+    {
+        fecha: '12/2019 - 02/2020',
+        lugar: 'FCPN - UMSA',
+        titulo: 'Apoyo Administrativo Verano 2019',
+        descripcion: 'Realizar y Administrar Inscripciones del Curso de Temporada Verano 2019 y los trámites correspondientes al curso.',
+        imagen: './imgs/exla/exla_6.jpg'
+    },
+    {
+        fecha: '06/2019 - 08/2019',
+        lugar: 'FCPN - UMSA',
+        titulo: 'Apoyo Administrativo Invierno 2020',
+        descripcion: 'Realizar y Administrar Inscripciones del Curso de Temporada Invierno 2020 y los trámites correspondientes al curso.',
+        imagen: './imgs/exla/exla_5.jpg'
+    },
+    {
+        fecha: '02/2019 - 02/2019',
+        lugar: 'FCPN - UMSA',
+        titulo: 'Tribunal Paritario Docente - Estudiantil',
+        descripcion: 'Evalucación de los postulantes a la Convocatoria de Auxiliares de Docencia en la materia de MAT-156.',
+        imagen: './imgs/exla/exla_4.jpg'
+    },
+    {
+        fecha: '01/2019 - 03/2019',
+        lugar: 'Fundación "AYDHA"',
+        titulo: 'Asesor y Tutor',
+        descripcion: 'Enseñar electrónica e informatica, para que posteriormente sean capaces de poder resolver problemas basicos de la electronica y conocimiento de estructuras informaticas.',
+        imagen: './imgs/exla/exla_3.jpg'
+    },
+    {
+        fecha: '07/2018 - 08/2018',
+        lugar: 'Fundación "AYDHA"',
+        titulo: 'Asesor y Tutor',
+        descripcion: 'Enseñar electrónica básica, el armado y codificación de la plaqueta Arduino a publico en general.',
+        imagen: './imgs/exla/exla_2.jpg'
+    },
+    {
+        fecha: '04/2017 - 09/2017',
+        lugar: 'Instituto de Estadística Teórica y Aplicada - UMSA',
+        titulo: 'Digitalizador de Datos',
+        descripcion: 'Digitalizar información almacenada de pacientes, para la implementacion de un nuevo sistema, a su vez se realizo un estudio estadistico del tipo de pacientes y tipo de problemas que tenian.',
+        imagen: './imgs/exla/exla_1.jpg'
+    },
+];
