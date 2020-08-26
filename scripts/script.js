@@ -93,7 +93,7 @@ function cargarFormAca(){
         var p = document.createElement("p");
         var pTitulo = document.createElement("p");
         pTitulo.setAttribute("class", "click");
-        pTitulo.setAttribute("onclick", "mostrar_modal('foac', '"+valor.imagen+"');");
+        pTitulo.setAttribute("onclick", "mostrar_modal('foac', '"+ valor.imagen +"');");
         pTitulo.innerText = valor.titulo;
         p.innerText = valor.fecha;
         div.appendChild(p);
@@ -124,7 +124,7 @@ function cargarExpLab(){
         div.appendChild(p);
         var pTitulo = document.createElement("p");
         pTitulo.setAttribute("class", "click");
-        pTitulo.setAttribute("onclick", "mostrar_modal('exla', '"+valor.imagen+"');");
+        pTitulo.setAttribute("onclick", "mostrar_modal('exla', '"+valor.imagen +"');");
         pTitulo.innerText = valor.titulo;
         div.appendChild(pTitulo);
         p = document.createElement("p");
@@ -146,7 +146,7 @@ function cargarTalleres(){
         div.setAttribute('class', "sector talleres tach");
         var p = document.createElement("p");
         p.setAttribute("class", "click");
-        p.setAttribute("onclick", "mostrar_modal('tach', '"+valor.imagen+"');");
+        p.setAttribute("onclick", "mostrar_modal('tach', '"+valor.imagen +"');");
         p.innerHTML = valor.fecha + '<i class="fas fa-dot-circle"></i>'+
                     valor.lugar + '<i class="fas fa-dot-circle"></i>'+
                     valor.tema + '<i class="fas fa-dot-circle"></i>'+
@@ -176,7 +176,7 @@ function cargarFormAdi(){
         divSector.appendChild(p);
         p = document.createElement("p");
         p.setAttribute("class", "click");
-        p.setAttribute("onclick", "mostrar_modal('foad', '"+valor.imagen+"');");
+        p.setAttribute("onclick", "mostrar_modal('foad', '"+valor.imagen +"');");
         p.innerText = valor.titulo;
         divSector.appendChild(p);
         div.appendChild(divSector);
@@ -218,14 +218,14 @@ function atras(){
     mostrar_foto(img);
 }
 
-function mostrar_modal(pre, num){
-    pref = pre;
-    img = num;
+function mostrar_modal(pre, url){
     var x = document.getElementsByClassName(pre);
+    var img = url.substr(-5, 1);
     modal.style.display = "grid";
-    lim = x.length;
-    infor.innerHTML = num+"/"+lim;
-    mostrar_foto(img) 
+    lim = x.length + 1;
+    console.log(x[lim - img]);
+    /* infor.innerHTML = x[lim-img].value; */
+    mostrar_foto(url);
 }
 function cerrar_modal(){
     modal.style.display = "none";
@@ -244,6 +244,7 @@ function mostrar_foto(img){
     }
     cerrar_spin();
 }
+
 var spin_carga = document.getElementById('spin-carga');
 window.onload = cerrar_spin();
 

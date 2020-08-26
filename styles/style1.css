@@ -324,7 +324,7 @@ body{
     color: var(--color-blanco);
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 8% 90%;
-    grid-template-areas: "info . cerrar"
+    grid-template-areas: ". info cerrar"
                         "ant foto sig";
     animation: 1s deslizar_arriba;
 }
@@ -334,9 +334,9 @@ body{
 }
 #m_info{
     grid-area: info;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
-    margin: 25%;
+    vertical-align: middle;
 }
 #m_ant,
 #m_sig{
