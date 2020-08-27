@@ -5,128 +5,241 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="styles/style1.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Fuente -->
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet" />
+    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/fafa46ece0.js"></script>
-    <link rel="shortcut icon" href="https://vitaegranelldelfuente.files.wordpress.com/2016/03/icono_becas_prepa.png?w=256&h=257" type="image/png">
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="styles/style1.css" />
+    <link rel="shortcut icon"
+        href="https://vitaegranelldelfuente.files.wordpress.com/2016/03/icono_becas_prepa.png?w=256&h=257"
+        type="image/png">
 </head>
 
 <body>
-    <div class="box encabezado" id="encabezado">
-        <img src="imgs/perfil.jpg" alt="Foto Perfil" />
-        <div class="nombre">
-            <h2></h2>
-            <h2></h2>
+    <!-- Menu de Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark my-bg-dark">
+        <div class="navbar-brand">
+            <div class="row">
+                <div class="col-6">
+                    <a href="https://github.com/aivan1909" class="my-link-light" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                </div>
+                <div class="col-6">
+                    <a href="https://www.linkedin.com/in/aivatepaz/" class="my-link-light" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
         </div>
-        <span class="prof_actual" id="profActual"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href=".">Sobre Mi <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/estudios.html">Estudios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/charlas.html">Charlas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Proyectos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" target="_blank" href="https://plasmacovidbo.github.io/home/">Dona Plasma Bolivia</a>
+                        <a class="dropdown-item" target="_blank" href="https://aivan1909.github.io/itbglobal/">ITB Global</a>
+                        <a class="dropdown-item" target="_blank" href="https://centropuedes.org/">Centro Puedes</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/docs/CV_Ivan_Terrazas.pdf"><i class="fas fa-download"></i> Obtener CV</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Informacion -->
+    <div id="info" class="py-5 my-bg-secondary text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 mb-3 col-lg-3">
+                    <div class="col-sm-6 col-md-12 m-auto">
+                        <img src="" id="myPic" alt="" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-9">
+                    <div class="content">
+                        <p>Hola, Mi nombre es</p>
+                        <h1 id="myName"></h1>
+                        <p>Actualmente soy tesista de la Carrera de Informática, UMSA. Me dedico al
+                            Desarrollo Web, Frontend y Backend.
+                            Soy una persona que se le gusta aprender cada dia más, que no se rinde facilmente y se
+                            adapta al trabajo ya sea en grupo o individual, siempre teniendo como fundamento el respeto,
+                            responsabilidad y lealtad</p>
+                        <div class="row flex-nowrap">
+                            <div class="col-6 col-lg-3">
+                                <a class="btn my-btn-primary my-text-light" 
+                                    target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=+59169788901&text&source&data&app_absent&lang=es"><i
+                                    class="fab fa-whatsapp"></i>&nbsp;&nbsp;Contactar</a>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <a class="btn my-btn-primary my-text-light" href="mailto:ivatepaz94@gmail.com"><i
+                                    class="fas fa-envelope"></i>&nbsp;&nbsp;Contactar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="box sobre_mi" id="sobreMi"></div>
-    <section class="box contacto">
-        <div class="cabeza-box">
-            <i class="fas fa-envelope"></i>
-            <h3>Contacto</h3>
-            <div class="linea-vertical"></div>
-        </div>
-        <div class="sector">
-            <span>Correo:</span>
-            <a id="correo" class="click"
-                target="_blank"></a>
-        </div>
-        <div class="sector">
-            <span>Celular:</span>
-            <a id="telefono" class="click"
-                target="_blank"></a>
-        </div>
-        <div class="sector">
-            <span>Domicilio:</span>
-            <span id="domicilio"></span>
-        </div>
-        <div class="sector">
-            <span>Ciudad:</span>
-            <span id="ciudad"></span>
-        </div>
-        <div class="sector">
-            <span>Fecha de Nacimiento:</span>
-            <span id="fechaNac"></span>
-        </div>
-    </section>
-    <div class="box codigoQR">
-        <img alt="Mi QR de CV" id="miqr"/>
-        <div class="cabeza-box">
-            <i class="fas fa-address-card"></i>
-            <p>Mi CV Virtual</p>
+    <!-- Habilidades -->
+    <div id="habilidades" class="py-5 my-bg-light">
+        <h2 class="text-center mb-5 my-text-primary">Habilidades</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 my-1">
+                    <div class="card overflow-hidden">
+                        <div class="position-relative p-2">
+                            <div class="position-absolute icono-top-right text-center rounded-circle my-bg-primary my-text-light d-flex justify-content-center align-items-center">
+                                <i class="fas fa-laptop fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="card-body" id="pnlFrontend">
+                            <h5 class="card-title text-center my-text-dark font-weight-bolder">Frontend</h5>
+                            <ul class="no-list-style">
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 my-1">
+                    <div class="card overflow-hidden">
+                        <div class="position-relative p-2">
+                            <div class="position-absolute icono-top-right text-center rounded-circle my-bg-primary my-text-light d-flex justify-content-center align-items-center">
+                                <i class="fas fa-server fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="card-body" id="pnlBackend">
+                            <h5 class="card-title text-center my-text-dark font-weight-bolder">Backend</h5>
+                            <ul class="no-list-style">
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 my-1">
+                    <div class="card overflow-hidden">
+                        <div class="position-relative p-2">
+                            <div class="position-absolute icono-top-right text-center rounded-circle my-bg-primary my-text-light d-flex justify-content-center align-items-center">
+                                <i class="fas fa-laptop-house fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="card-body" id="pnlOtros">
+                            <h5 class="card-title text-center my-text-dark font-weight-bolder">Otros</h5>
+                            <ul class="no-list-style">
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <section class="box idiomas">
-        <div class="cabeza-box">
-            <i class="fas fa-globe-americas"></i>
-            <h3>Idiomas</h3>
-            <div class="linea-vertical"></div>
+    <!-- Tesis de Grado -->
+    <div id="tesis" class="py-5">
+        <h2 class="text-center mb-5 my-text-primary">Mi Tesis de Grado</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 mb-4">
+                    <img src="/imgs/icons/docs-secondary.svg" class="img-fluid px-5" alt="" srcset="">
+                </div>
+                <div class="col-sm-12 col-md-8 mb-3">
+                    <h4 class="text-center mb-4">&quot;Herramienta CASE para generar C&oacute;digo Python a partir de un Pseudoc&oacute;digo&quot;</h4>
+                    <p class="m-0">Universidad Mayor de &quot;San Andr&eacute;s&quot;</p>
+                    <p class="m-0">Facultad de Ciencias Puras y Naturales</p>
+                    <p>Carrera de Inform&aacute;tica</p>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-5 my-2 text-center">
+                            <a target="_blank" href="/docs/Perfil_Terrazas_Ivan.pdf" class="btn my-btn-outline-secondary"><i class="fas fa-download"></i>&nbsp;&nbsp;&nbsp;Perfil de Tesis</a>
+                        </div>
+                        <div class="col-sm-12 col-md-7 my-2 text-center">
+                            <a href="/docs/Resolucion_Aprobacion.pdf" class="btn my-btn-outline-secondary"><i class="fas fa-download"></i>&nbsp;&nbsp;&nbsp;Resoluci&oacute;n de Aprobaci&oacute;n</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <section id="idiomas"></section>
-    </section>
-    <section class="box habilidades">
-        <div class="cabeza-box">
-            <i class="fas fa-user"></i>
-            <h3>Informática</h3>
-            <div class="linea-vertical"></div>
-        </div>
-        <ul id="habilidades"></ul>
-    </section>
-    <!-- FORMACION ACADEMICA -->
-    <div class="box formacion-academica">
-        <div class="cabeza-box">
-            <i class="fas fa-graduation-cap"></i>
-            <h3>Formacion Academica</h3>
-            <div class="linea-vertical"></div>
-        </div>
-        <div id="foac"></div>
     </div>
-    <!-- EXPERIENCIA LABORAL -->
-    <div class="box experiencia-laboral">
-        <div class="cabeza-box">
-            <i class="fab fa-black-tie"></i>
-            <h3>Experiencia Laboral</h3>
-            <div class="linea-vertical"></div>
+    <!-- Footer -->
+    <footer class="my-bg-dark">
+        <div class="container pt-5 pb-3">
+            <h4 class="text-center">En caso de que quieras contar conmigo...</h4>
+            <p class="text-center">Puedes escribirme al &nbsp;&nbsp;
+                <a class="my-link-light" 
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=+59169788901&text&source&data&app_absent&lang=es"><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Whatsapp</a>&nbsp;&nbsp;
+                o a mi correo personal &nbsp;&nbsp;
+                <a class="my-link-light" 
+                    href="mailto:aivatepaz94@gmail.com"><i class="fas fa-envelope"></i>&nbsp;&nbsp;ivatepaz94@gmail.com</a>
+            </p>
+            <p class="text-center">Muchisimas gracias por tomarte el tiempo de ver mi Portafolio :)</p>
         </div>
-        <div id="exla"></div>        
-    </div>
-    <!-- TALLERES Y CHARLAS -->
-    <div class="box talleres">
-        <div class="cabeza-box">
-            <i class="fas fa-chalkboard-teacher"></i>
-            <h3>Talleres Charlas</h3>
-            <div class="linea-vertical"></div>
+        <div class="bg-dark container-fluid py-2 text-center">
+            <small class="d-block">Agosto 2020 &zigrarr; La Paz-Bolivia</small>
         </div>
-        <div id="tach"></div>
+    </footer>
 
-    </div>
 
-    <!-- FORMACION ADICIONAL -->
-    <div class="box formacion-adicional">
-        <div class="cabeza-box">
-            <i class="fas fa-chalkboard"></i>
-            <h3>Formaciones Adicionales y de Interes</h3>
-            <div class="linea-vertical"></div>
+    <!-- Modal para Imagenes -->
+    <button type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#modalShow"
+        data-whatever="@Hola como esra">Open modal for @fat</button>
+    <div class="modal fade" id="modalShow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <img src="https://i.blogs.es/594843/chrome/450_1000.jpg" class="d-block">
+            </div>
         </div>
-        <div id="foad"></div>
     </div>
 
-    <!-- MODAL -->
-    <div id="modal">
-        <span id="m_info"></span>
-        <span onclick="cerrar_modal()" id="m_cerrar">X</span>
-        <span onclick="atras()" id="m_ant"><</span>
-        <img id="foto" alt="Certificado en proceso" onerror="img_error();"/>
-        <span onclick="adelante()" id="m_sig">></span>
-    </div>
-    <div id="spin-carga"></div>
-</body>
-<script src="scripts/perfil.js"></script>
-<script src="scripts/formacion_academica.js"></script>
-<script src="scripts/formacion_adicional.js"></script>
-<script src="scripts/talleres.js"></script>
-<script src="scripts/experiencia_laboral.js"></script>
-<script src="scripts/script.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 
+    <!-- Mis Scripts -->
+    <script src="/scripts/script1.js"></script>
 </html>
