@@ -1,0 +1,56 @@
+{
+    "nombre": "Ivan",
+    "segundoNombre": "Aramis",
+    "apellidoPaterno": "Terrazas",
+    "apellidoMaterno": "Paz",
+    "foto": "/imgs/perfil.jpg",
+    "qr": "/imgs/micv.png",
+    "profesionActual": "Tesista de Informática - UMSA",
+    "valores": ["Responsabilidad",
+            "Transparencia",
+            "Organización",
+            "Creatividad",
+            "Respeto",
+            "Justicia"],
+    "correo": "ivatepaz94@gmail.com",
+    "github": "69788901",
+    "linkedin": "69788901",
+    "telefono": "69788901",
+    "domicilio": "C. Independencia #364 Z. Achachicala",
+    "ciudad": "La Paz - Bolivia",
+    "fechaNac": "19/09/1994",
+    "idiomas":[
+        {
+            "idioma": "Español",
+            "nivel": "Idioma Natal"
+        },
+        {
+            "idioma": "Inglés",
+            "nivel": "Nivel Intermedio"
+        }
+    ],
+    "frontend": 
+    [   
+        "HTML/CSS",
+        "JavaScript",
+        "Bootstrap",
+        "JQuery",
+        "Vue",
+        "UI/Figma"
+    ],
+    "backend":
+    [
+        "MySql",
+        "Oracle",
+        "SqlServer",
+        "PHP",
+        "CodeIgniter"
+    ],
+    "otros":
+    [
+        "Microsoft Office",
+        "Java",
+        "Python",
+        "Arduino"
+    ]
+}
