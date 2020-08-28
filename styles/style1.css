@@ -156,6 +156,8 @@ a.my-link-mail:hover{
 /* Listas */
 ul.no-list-style{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .icono-top-right{
     width: 8rem;
@@ -163,7 +165,7 @@ ul.no-list-style{
     padding: 1rem;
     padding-top: 4.5rem;
     padding-right: 4.5rem;
-    top: calc(50% - 4.5rem);
+    top: calc(0% - 4.5rem);
     left: calc(100% - 4rem);
 }
 .icono-bottom-right{
@@ -172,4 +174,27 @@ ul.no-list-style{
     padding-right: 3rem;
     bottom: -2.3rem;
     right: -2.3rem;
+}
+.icono-left{
+    max-width: 12rem;
+    max-height: 12rem;
+    bottom: calc(0% - 1rem);
+    left: calc(0% - 6rem);
+}
+/* Manejo de Filtros */
+img.filter-marca-agua{
+    filter: opacity(.248) blur(.1rem);
+}
+
+/* Encabezados de cada pagina */
+.encabezado{
+    display: flex;
+    align-items: center;
+}
+.encabezado img{
+    max-height: 5.5rem;
+}
+.encabezado *{
+    margin: 0;
+    padding: 0;
 }
