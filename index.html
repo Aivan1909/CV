@@ -13,7 +13,7 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/fafa46ece0.js"></script>
     <!-- Mis Estilos -->
-    <link rel="stylesheet" href="styles/style1.css" />
+    <link rel="stylesheet" href="/styles/style1.css" />
     <link rel="shortcut icon"
         href="https://vitaegranelldelfuente.files.wordpress.com/2016/03/icono_becas_prepa.png?w=256&h=257"
         type="image/png">
@@ -39,13 +39,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href=".">Sobre Mi <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Sobre Mi <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/pages/estudios.html">Estudios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/pages/charlas.html">Charlas</a>
+                    <a class="nav-link" href="/pages/experiencia.html">Experiencia</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -75,8 +75,8 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-9">
                     <div class="content">
-                        <p>Hola, Mi nombre es</p>
-                        <h1 id="myName"></h1>
+                        <p>Hola, mi nombre es...</p>
+                        <h1 id="myName" class="text-capitalize"></h1>
                         <p>Actualmente soy tesista de la Carrera de Informática, UMSA. Me dedico al
                             Desarrollo Web, Frontend y Backend.
                             Soy una persona que se le gusta aprender cada dia más, que no se rinde facilmente y se
@@ -106,66 +106,42 @@
             <div class="row">
                 <div class="col-sm-12 col-md-4 my-1">
                     <div class="card overflow-hidden">
-                        <div class="position-relative p-2">
-                            <div class="position-absolute icono-top-right text-center rounded-circle my-bg-primary my-text-light d-flex justify-content-center align-items-center">
-                                <i class="fas fa-laptop fa-lg"></i>
-                            </div>
+                        <div class="card-title m-0 my-bg-primary p-2">
+                            <h5 class="card-title text-center font-weight-bolder m-0">Frontend</h5>
                         </div>
                         <div class="card-body" id="pnlFrontend">
-                            <h5 class="card-title text-center my-text-dark font-weight-bolder">Frontend</h5>
+                            <img class="icono-left position-absolute filter-marca-agua"
+                                src="/imgs/icons/developer/svg/008-responsive design.svg" srcset="">
                             <ul class="no-list-style">
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
+                                <!-- Llenado de Frontend -->
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 my-1">
                     <div class="card overflow-hidden">
-                        <div class="position-relative p-2">
-                            <div class="position-absolute icono-top-right text-center rounded-circle my-bg-primary my-text-light d-flex justify-content-center align-items-center">
-                                <i class="fas fa-server fa-lg"></i>
-                            </div>
+                        <div class="card-title m-0 my-bg-primary p-2">
+                            <h5 class="card-title text-center font-weight-bolder m-0">Backend</h5>
                         </div>
                         <div class="card-body" id="pnlBackend">
-                            <h5 class="card-title text-center my-text-dark font-weight-bolder">Backend</h5>
+                            <img class="icono-left position-absolute filter-marca-agua img-fluid"
+                                src="/imgs/icons/developer/svg/039-database.svg" srcset="">
                             <ul class="no-list-style">
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
+                                <!-- Llenado de Backend -->
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 my-1">
-                    <div class="card overflow-hidden">
-                        <div class="position-relative p-2">
-                            <div class="position-absolute icono-top-right text-center rounded-circle my-bg-primary my-text-light d-flex justify-content-center align-items-center">
-                                <i class="fas fa-laptop-house fa-lg"></i>
-                            </div>
+                    <div class="card overflow-hidden ">
+                        <div class="card-title m-0 my-bg-primary p-2">
+                            <h5 class="card-title text-center font-weight-bolder m-0">Otros</h5>
                         </div>
                         <div class="card-body" id="pnlOtros">
-                            <h5 class="card-title text-center my-text-dark font-weight-bolder">Otros</h5>
+                            <img class="icono-left position-absolute filter-marca-agua"
+                                src="/imgs/icons/developer/svg/007-window.svg" srcset="">
                             <ul class="no-list-style">
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
-                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Front
-                                </li>
+                                <!-- Llenado de Otros -->
                             </ul>
                         </div>
                     </div>
@@ -203,31 +179,29 @@
         <div class="container pt-5 pb-3">
             <h4 class="text-center">En caso de que quieras contar conmigo...</h4>
             <p class="text-center">Puedes escribirme al &nbsp;&nbsp;
-                <a class="my-link-light" 
+                <a class="my-link-light text-nowrap" 
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=+59169788901&text&source&data&app_absent&lang=es"><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Whatsapp</a>&nbsp;&nbsp;
-                o a mi correo personal &nbsp;&nbsp;
-                <a class="my-link-light" 
+                <a class="my-link-light text-nowrap" 
                     href="mailto:aivatepaz94@gmail.com"><i class="fas fa-envelope"></i>&nbsp;&nbsp;ivatepaz94@gmail.com</a>
             </p>
             <p class="text-center">Muchisimas gracias por tomarte el tiempo de ver mi Portafolio :)</p>
+        </div>
+        <div class="container-md">
+            <small style="font-size:.7rem">
+                Iconos: 
+                <a target="_blank" 
+                    href="https://www.flaticon.com/authors/nikita-golubev" 
+                    title="Nikita Golubev">Nikita Golubev</a> - 
+                <a target="_blank" 
+                    href="https://www.flaticon.com/" 
+                    title="Flaticon"> www.flaticon.com</a>
+            </small>
         </div>
         <div class="bg-dark container-fluid py-2 text-center">
             <small class="d-block">Agosto 2020 &zigrarr; La Paz-Bolivia</small>
         </div>
     </footer>
-
-
-    <!-- Modal para Imagenes -->
-    <button type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#modalShow"
-        data-whatever="@Hola como esra">Open modal for @fat</button>
-    <div class="modal fade" id="modalShow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <img src="https://i.blogs.es/594843/chrome/450_1000.jpg" class="d-block">
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -241,5 +215,5 @@
         crossorigin="anonymous"></script>
 
     <!-- Mis Scripts -->
-    <script src="/scripts/script1.js"></script>
+    <script src="/scripts/scriptPerfil.js"></script>
 </html>
