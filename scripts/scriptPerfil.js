@@ -1,5 +1,5 @@
 /* Cargar Perfil */
-fetch("/json/perfil.json")
+fetch("./../json/perfil.json")
 .then(xhr => xhr.json())
 .then(res => {
     let {
@@ -15,7 +15,7 @@ fetch("/json/perfil.json")
     myName.textContent = `${nombre} ${apellidoPaterno}` /* Set Nombre completo */
 
     const myPic = document.querySelector('#myPic')
-    myPic.setAttribute('src', foto) /* Set foto */
+    myPic.setAttribute('src', `./..${foto}`) /* Set foto */
 
     const pnlFrontend = document.querySelector('#pnlFrontend ul')
     let cont = ''

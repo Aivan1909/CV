@@ -6,7 +6,7 @@ export const cargarDatosModal = (titulo, src)=>{
         if(xhr.status===200){
             modalImagen.setAttribute('src', src)
         }else if(xhr.status===404){
-            modalImagen.setAttribute('src', "/imgs/error.jpg")
+            modalImagen.setAttribute('src', "./../imgs/error.jpg")
         }
     }
     )

@@ -5,15 +5,15 @@
 /* UNIVERSAL */
 @font-face{
     font-family: "Montserrat";
-    src: url("/fonts/Montserrat-Regular.ttf");
+    src: url("./../fonts/Montserrat-Regular.ttf");
 }
 @font-face{
     font-family: "OpenSans";
-    src: url("/fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf");
+    src: url("./../fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf");
 }
 @font-face{
     font-family: "RobotoCondensed";
-    src: url("/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf");
+    src: url("./../fonts/Roboto_Condensed/RobotoCondensed-Light.ttf");
 }
 :root{
     --color-primary: #1f4068;

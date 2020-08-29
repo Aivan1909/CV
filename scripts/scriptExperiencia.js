@@ -2,7 +2,7 @@ import * as ui from "./scriptUI.js"
 /* Cargar Experiencia */
 const experienciaLaboral = document.querySelector('#experienciaLaboral')
 const charlasTalleres = document.querySelector('#charlasTalleres')
-fetch("/json/experiencia.json")
+fetch("./../json/experiencia.json")
 .then(xhr => xhr.json())
 .then(res => {
     const ulExperiencia = experienciaLaboral.querySelector('.container ul')
@@ -23,7 +23,7 @@ fetch("/json/experiencia.json")
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <button data-src="${imagen}" data-title="${titulo}" class="btn btn-block my-btn-secondary h-100" data-toggle="modal" data-target="#showModal">
+                            <button data-src="./..${imagen}" data-title="${titulo}" class="btn btn-block my-btn-secondary h-100" data-toggle="modal" data-target="#showModal">
                                 <i class="fas fa-eye fa-lg"></i>&nbsp;&nbsp;Ver Certificado
                             </button>
                         </div>
@@ -52,7 +52,7 @@ fetch("/json/experiencia.json")
                             </div>
                         </div>
                         <div class="col-sm-3 d-none">
-                            <button data-src="${imagen}" class="btn btn-block my-btn-secondary h-100"><i class="fas fa-eye fa-lg"></i>&nbsp;&nbsp;Ver Certificado</button>
+                            <button data-src="./..${imagen}" class="btn btn-block my-btn-secondary h-100"><i class="fas fa-eye fa-lg"></i>&nbsp;&nbsp;Ver Certificado</button>
                         </div>
                     </div>
                 </li>`

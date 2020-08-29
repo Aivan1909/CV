@@ -22,7 +22,7 @@ fetch("/json/estudios.json")
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <button data-title="${titulo}" data-src="${imagen}" class="btn btn-block my-btn-secondary h-100" data-toggle="modal" data-target="#showModal"><i class="fas fa-eye fa-lg"></i>&nbsp;&nbsp;Ver Certificado</button>
+                            <button data-title="${titulo}" data-src="./..${imagen}" class="btn btn-block my-btn-secondary h-100" data-toggle="modal" data-target="#showModal"><i class="fas fa-eye fa-lg"></i>&nbsp;&nbsp;Ver Certificado</button>
                         </div>
                     </div>
                 </li>`
