@@ -1,5 +1,5 @@
 /* Cargar Perfil */
-fetch("./../json/perfil.json")
+fetch("https://github.com/Aivan1909/CV/blob/master/json/perfil.json")
 .then(xhr => xhr.json())
 .then(res => {
     let {
