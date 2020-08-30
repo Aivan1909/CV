@@ -11,3 +11,34 @@ export const cargarDatosModal = (titulo, src)=>{
     }
     )
 }
+
+export const igualarCards = ()=>{
+    const cards = document.querySelectorAll('#habilidades .card') /* Seleccionamos los cards */
+    let hgt = 0
+    cards.forEach(el => {
+        if(el.clientHeight>hgt)
+            hgt=el.clientHeight /* Extraemos la altura mayor */
+    })
+    cards.forEach(el => {
+        el.setAttribute('style', `height:${hgt}px`) /* Igualamos la altura de todos los cards */
+    })
+}
+
+export const hideSpinner = () => {
+    document.querySelector('#spinner').classList.add('d-none')
+}
+export const changeColorNav = () => {
+    window.onscroll = () => {
+        const navTag = document.querySelector('nav')
+        const divTag = document.querySelector('body>div')
+        const divColorBg = divTag.classList.contains('my-bg-primary')? "my-bg-primary":"my-bg-secondary"
+        if(window.scrollY >= divTag.clientHeight){
+            navTag.classList.remove('my-bg-dark')
+            navTag.classList.add(divColorBg)
+        }else{
+            navTag.classList.add('my-bg-dark')
+            navTag.classList.remove(divColorBg)
+        }
+        //navTag.classList.remove('my-bg-dark')
+    }
+}
