@@ -4,33 +4,46 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>Curriculum Vitae</title>
+    <title>IT - Curriculum Vitae</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Fuente -->
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet" />
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/fafa46ece0.js"></script>
+    
     <!-- Mis Estilos -->
     <link rel="stylesheet" href="./styles/style1.css" />
     <link rel="shortcut icon"
-        href="https://vitaegranelldelfuente.files.wordpress.com/2016/03/icono_becas_prepa.png?w=256&h=257"
+        href="./imgs/logo/Logo_Aivan_Primary.jpg"
         type="image/png">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fafa46ece0.js"></script>
+    <!-- Mis Scripts -->
+    <script src="./scripts/script.js" type="module"></script>
 </head>
 
 <body>
+    <section id=spinner>
+        <div id=spinner-items class="">
+            <div style="--i:1;"></div>
+            <div style="--i:2;"></div>
+            <div style="--i:3;"></div>
+            <div style="--i:4;"></div>
+            <div style="--i:5;"></div>
+            <div style="--i:6;"></div>
+            <div style="--i:7;"></div>
+            <div style="--i:8;"></div>
+            <div style="--i:9;"></div>
+        </div>
+    </section>
     <!-- Menu de Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-dark my-bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark my-bg-dark sticky-top">
         <div class="navbar-brand">
-            <div class="row">
-                <div class="col-6">
-                    <a href="https://github.com/aivan1909" class="my-link-light" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                </div>
-                <div class="col-6">
-                    <a href="https://www.linkedin.com/in/aivatepaz/" class="my-link-light" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                </div>
-            </div>
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/logo/Logo_Aivan_Light.png" alt="img-fluid" width="30" height="30">
+                Ivan Terrazas
+            </a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,6 +75,14 @@
                     <a class="nav-link" target="_blank" href="./docs/CV_Ivan_Terrazas.pdf"><i class="fas fa-download"></i> Obtener CV</a>
                 </li>
             </ul>
+            <div class="row mx-3">
+                <div class="col-6 nav-link text-center">
+                    <a href="https://github.com/aivan1909" class="my-link-light" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                </div>
+                <div class="col-6 nav-link text-center">
+                    <a href="https://www.linkedin.com/in/aivatepaz/" class="my-link-light" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- Informacion -->
@@ -70,13 +91,13 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 mb-3 col-lg-3">
                     <div class="col-sm-6 col-md-12 m-auto">
-                        <img src="" id="myPic" alt="" class="img-fluid rounded">
+                        <img src="./imgs/perfil.jpg" id="myPic" alt="" class="img-fluid rounded">
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-9">
                     <div class="content">
                         <p>Hola, mi nombre es...</p>
-                        <h1 id="myName" class="text-capitalize"></h1>
+                        <h1 id="myName" class="text-capitalize">Ivan Terrazas</h1>
                         <p>Actualmente soy tesista de la Carrera de Informática, UMSA. Me dedico al
                             Desarrollo Web, Frontend y Backend.
                             Soy una persona que se le gusta aprender cada dia más, que no se rinde facilmente y se
@@ -114,6 +135,12 @@
                                 src="./imgs/icons/developer/svg/008-responsive design.svg" srcset="">
                             <ul class="no-list-style">
                                 <!-- Llenado de Frontend -->
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;HTML/CSS</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Javascript</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Bootstrap</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;JQuery</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Vue</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;UI/Figma</li>
                             </ul>
                         </div>
                     </div>
@@ -128,6 +155,12 @@
                                 src="./imgs/icons/developer/svg/039-database.svg" srcset="">
                             <ul class="no-list-style">
                                 <!-- Llenado de Backend -->
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;MySql</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Oracle</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Sql Server</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Firebase</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;PHP</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Codeigniter</li>
                             </ul>
                         </div>
                     </div>
@@ -142,6 +175,11 @@
                                 src="./imgs/icons/developer/svg/007-window.svg" srcset="">
                             <ul class="no-list-style">
                                 <!-- Llenado de Otros -->
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Microsoft Office</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Java</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;C++</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Python</li>
+                                <li class="ml-3"><i class="fas fa-check my-text-secondary"></i>&nbsp;&nbsp;&nbsp;Arduino</li>
                             </ul>
                         </div>
                     </div>
@@ -213,7 +251,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-
-    <!-- Mis Scripts -->
-    <script src="./scripts/scriptPerfil.js"></script>
 </html>
